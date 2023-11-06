@@ -8,7 +8,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "k8-lab-eks-${random_string.suffix.result}"
+  cluster_name = "k8-lab-eks-74ytu4hgu"
 }
 
 resource "random_string" "suffix" {
