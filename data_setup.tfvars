@@ -1,1 +1,1 @@
-global_random_var="randomvariabletoreplace"
+global_random_var="f5tg45t4"

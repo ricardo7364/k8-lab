@@ -1,6 +1,7 @@
 
 variable "global_random_var"{
   type    = string
+  default = "f5tg45t4"
 }
 
 variable "networking" {
