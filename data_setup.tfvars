@@ -1,0 +1,1 @@
+global_random_var="randomvariabletoreplace"
