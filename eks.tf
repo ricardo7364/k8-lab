@@ -24,9 +24,9 @@ resource "aws_eks_node_group" "node-ec2" {
   subnet_ids      = flatten(aws_subnet.public_subnets[*].id)
 
   scaling_config {
-    desired_size = try(each.value.scaling_config.desired_size, 5)
-    max_size     = try(each.value.scaling_config.max_size, 5)
-    min_size     = try(each.value.scaling_config.min_size, 3)
+    desired_size = try(each.value.scaling_config.desired_size, 3)
+    max_size     = try(each.value.scaling_config.max_size, 3)
+    min_size     = try(each.value.scaling_config.min_size, 2)
   }
 
   update_config {
