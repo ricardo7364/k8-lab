@@ -31,7 +31,7 @@ resource "aws_internet_gateway" "i_gateway" {
 # EIPs
 resource "aws_eip" "elastic_ip" {
   count      = var.networking.public_subnets == null || var.networking.nat_gateways == false ? 0 : length(var.networking.public_subnets)
-  vpc        = true
+  domain = "vpc"
   depends_on = [aws_internet_gateway.i_gateway]
 
   tags = {
